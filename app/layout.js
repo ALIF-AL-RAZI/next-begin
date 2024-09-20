@@ -1,17 +1,26 @@
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '500',
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
+
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata = {
   title: "Hello this is begining",
@@ -22,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="p-6">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.className}  antialiased`}
         suppressHydrationWarning={true}
       >
         <nav>
