@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="p-6">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
         <nav>
           <ul className="flex gap-5">
