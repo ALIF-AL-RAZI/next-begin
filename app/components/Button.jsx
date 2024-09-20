@@ -3,7 +3,7 @@
 const Button = () => {
   return (
     <div>
-        <button className='bg-green-400 rounded-sm px-4 py-1' onClick={()=> console.log("I am clicked here")}>Click Here</button>
+        <button className='bg-green-400 rounded-sm px-4 py-1 mt-6' onClick={()=> console.log("I am clicked here")}>Click Here</button>
     </div>
   )
 }
